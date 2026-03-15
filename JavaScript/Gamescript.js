@@ -20,7 +20,7 @@ let BIGJAHUPreis = document.getElementById("BIGJAHUPreis")
     
 
 //sounds
-let davidsternAudio = new Audio('./sounds/jew_sound_effect.mp3')
+let davidsternAudio = new Audio('sounds/jew_sound_effect.mp3')
 let bgMusic = document.getElementById("bgMusic")
 
 //Punktesystem
