@@ -115,7 +115,7 @@ BIGJAHU.addEventListener("click", () =>{
 
 
 //background music
-bgMusic.volume = 0.88
+bgMusic.volume = 0.45
 let bodyy = document.getElementById("bodyy")
 
 bodyy.addEventListener("mouseover", () =>{
