@@ -24,7 +24,7 @@ let davidsternAudio = new Audio('../sounds/jew_sound_effect.mp3')
 let bgMusic = document.getElementById("bgMusic")
 
 //Punktesystem
-let points = 100
+let points = 1
 let pointsPassive = 0
 
 //scoreboard
