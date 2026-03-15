@@ -1,0 +1,123 @@
+*{
+      font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 0;
+    color: rgb(19, 70, 255);
+}
+
+body{
+    background-color: black;
+    background-image: url(../images/Title_Background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#mainBox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes wobbeln{
+
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(15deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(-15deg);}
+    100%{transform: rotate(0deg);}
+
+    
+}
+
+#logo{
+    animation: wobbeln 2s linear infinite;
+
+}
+
+#mainTitle{
+    margin-top: 5vh;
+    background-color: rgb(255, 255, 255);
+    font-size: 3.5vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    border-radius: 100px;
+}
+
+#startKnopf{
+    background-color: rgb(255, 255, 255);
+    font-size: 2.5vw;
+    text-align: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 2vw;
+    text-decoration: none;
+  font-family: "Carter One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  animation: knopf 1s linear infinite;
+}
+
+@keyframes spin1 {
+    from{ transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@keyframes spin2 {
+    from{ transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+
+#stern1{
+    position: absolute;
+    margin-left: -7vw;
+    margin-top: 2.9vh;
+    animation: spin1 1.1943s linear infinite;
+}
+
+#stern2{
+    position: absolute;
+      margin-left: 24vw;
+    margin-top: -15vh;
+    animation: spin2 1.1943s linear infinite;
+}
+
+@keyframes banner{
+   from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes knopf{
+    0%{background-color: white;
+        color: rgb(19, 70, 255);
+    }
+    50%{background-color: rgb(19, 70, 255);
+        color: white;
+    }
+    100%{background-color: white;
+        color: rgb(19, 70, 255);
+    }
+}
+
+.banner{
+    display: flex;
+    background-color: white;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    background-image: url(../images/Flag_of_Israel.svg) ;
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+#bannerBot{
+    margin-top: 3.395vh
+}
+
+.sterne{
+    animation: banner 10s linear infinite;
+}

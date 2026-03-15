@@ -1,0 +1,88 @@
+*{
+    color: rgb(19, 70, 255);
+}
+
+body{
+    background-color: black;
+    background-image:url(../images/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes spin {
+    from{ transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+.drehen{
+    animation: spin 1.1943s linear infinite; /* drehung*/
+}
+
+#scoreboard{
+    margin-bottom: 1vh;
+    font-size: 1.5vw;
+    background-color: white;
+    width: max-content;
+    border-style: inset;
+    
+}
+
+
+#shop{
+    background-color: rgba(0, 0, 0, 0.374);
+    display: flex;
+    margin-top: -5vh;
+    margin-left: 60vw;
+    border-style: solid;
+    padding-bottom: 10vh;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3vw;
+}
+
+#shopTitel{
+    padding-right: 30%;
+    padding-left: 20%;
+    text-align: center;
+    background-color: white;
+}
+
+#davidstern{
+
+    position: relative;
+    margin-left: 0vw;
+
+    
+}
+
+#items{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
+#sternContainer{
+    background-color: rgba(0, 0, 0, 0.374);
+    position: absolute;
+    margin-left: 1vw;
+    margin-top: -85vh;
+    border: solid;
+    border-color:  rgb(19, 70, 255);
+    padding-right: 20vw;
+    padding-bottom: 27.5vh;
+    padding-left: 20vw;
+    padding-top: 27.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
